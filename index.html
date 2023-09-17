@@ -3,142 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="shortcut icon" href="img/icon2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+    <link rel="stylesheet" href="css/style.css">
     <title>Alivio</title>
 </head>
 <body>
     <section class="header_nav">
         <div class="container">
             <div class="header_nav-flex">
-                <div class="header_logo">
-                    <img class="header_img" src="img/header_logo.svg" alt="Logo" >
-                </div>
+                <img class="header_img" src="img/header_logo.svg" alt="Logo" >
                 <ul class="header_navigation-flex">
-                    <li><a href="">Why Alivio</a></li>
-                    <li><a href="">Solutions</a></li>
-                    <li><a href="">Community</a></li>
-                    <li><a href="">Pricing</a></li>
+                    <li><a href="#alivio">Why Alivio</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
                 </ul>
                 <div class="header_btn-flex">
                     <button class="btn_sign-in">Sign in</button>
                     <button class="btn_trial">Start Trial</button>
                 </div>
+                <a class="sidenav-trigger" data-target="slide-out" href="#"><i class="material-icons">menu</i></a>
             </div>
         </div>
     </section>
-    <header class="header">
+        <!-- Бургер-меню -->
+        <ul id="slide-out" class="sidenav">
+            <li class="li_flex"><img class="header_logo" src="img/header_logo.svg" alt="" ><a href="#!" class="sidenav-close"><i class="material-icons">close</i></a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect sidenav-close text" href="#alivio">Why Alivio</a></li>
+            <li><a class="waves-effect sidenav-close text" href="#solutions">Solutions</a></li>
+            <li><a class="waves-effect sidenav-close text" href="#community">Community</a></li>
+            <li><a class="waves-effect sidenav-close text" href="#pricing">Pricing</a></li>
+        </ul>
+    <header class="header" id="community">
         <div class="container">
-            
-            <h1>Be aware, Manage well.</h1>
-            <p>Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+            <h1 class="header_h1">Be aware, Manage well.</h1>
+            <p class="header_p">Everyone experiences stress in different ways. Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
             <button class="header_btn-find">Find Your Way</button>
         </div>
     </header>
-    <section class="content">
+    <section class="content" id="alivio">
         <div class="container">
             <div class="content_flex">
                 <div class="content_flex-left">
-                    <div class="content_flex-left-text">
-                        <p class="content_p">How it works</p>
-                        <h2 class="content_h2">Understand & Release the stress in 3 steps</h2>
-                    </div>
+                    <p class="content_p">How it works</p>
+                    <h2 class="content_h2">Understand & Release the stress in 3 steps</h2>
                 </div>
-                <div class="content_flex-right">
-                    <div class="content_flex-right-text">
-                        <p class="content_p-text">Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.</p>
-                    </div>
-                </div>    
+                <p class="content_p-text">Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.</p>
             </div> 
-            <div class="content_wrap-grid">
-                <div class="content_wrap-grid-item">
+            <div class="content_grid">
+                <div class="content_grid-item">
                     <div class="content_number">01
                         <h3 class="content_h3">Personalize</h3>
                     </div>
-                    <div class="content_p-inner">
-                        <p class="content_p-texts">Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</p>
-                    </div>
+                    <p class="content_p-texts">Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!</p>
                     <img src="img/content_1.png" alt="Picture_1" class="content_img">
-                    
                 </div>
-                <div class="content_wrap-grid-item">
+                <div class="content_grid-item">
                     <div class="content_number">02
                         <h3 class="content_h3">Write & Understand</h3>
-                    </div>    
-                    <div class="content_p-inner">
-                        <p class="content_p-texts">Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</p>
-                    </div>
+                    </div>   
+                    <p class="content_p-texts">Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!</p>
                     <img src="img/content_2.png" alt="Picture_2" class="content_img">
                 </div>
-                <div class="content_wrap-grid-item">
+                <div class="content_grid-item">
                     <div class="content_number">03
                         <h3 class="content_h3">Alivio!</h3>
                     </div>
-                    <div class="content_p-inner">
-                        <p class="content_p-texts">Now you are aware, and have a way to manage and overcome your own stress.<br>What are you waiting for? Alivio today!</p>
-                    </div>
-                    <img src="img/content_3.png" alt="Picture_3" class="content_img">
+                    <p class="content_p-texts">Now you are aware, and have a way to manage and overcome your own stress.<br>What are you waiting for? Alivio today!</p>
+                    <img class="content_img" src="img/content_3.png" alt="Picture_3" >
                 </div>
             </div>
         </div>   
     </section>
-    <section class="video">
+    <section class="video" id="solutions">
         <div class="container_video">
             <div class="video_flex">
                 <div class="video_flex-left">
                     <h2 class="video_h2">Let's hear about<br>Kayla's success story</h2>
                     <p class="video_p">See how well Alivio works in a real customer’s life. </p>
-                    <button class="video_btn">Let’s get started</button>
+                    <button class="video_btn" data-tooltip="Текст с подсказкой">Let’s get started</button>
                 </div>
                 <div class="video_flex-right">
-                    <video width="896" height="516" controls poster="img/Video.png">
-                        <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                            Тег video не поддерживается вашим браузером.
-                        <a href="">Скачайте видео</a>.
-                    </video>
+                    <div class='embed-container' ><iframe   src='https://www.youtube.com/embed/pKqIlT5_hkI?si=_eMwzmmKzaLb17pl' frameborder='0' allowfullscreen></iframe></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="product">
+    <section class="product" id="pricing">
         <div class="container">
-            <div class="product_flex">
-                <div class="product__flex-left">
-                    <div class="product_img">
-                        <img class="product_photo" src="img/photo.png" alt="photo">
-                    </div>
-                    <div class="product_ava">
-                        <h5 class="product_h5">Customized For</h5>
+            <div class="product_grid">
+                <div class="product_grid-left">
+                    <img class="product_img" src="img/photo.png" alt="photo">
+                    <div class="product_ava z-depth-3">
+                        <h5 class="product_h5 flow-text">Customized For</h5>
                         <div class="product_line"></div>
                         <img class="product_ava-img" src="img/ava.png" alt="ava">
-                        <p class="product_name_p">Mikayla</p>
-                        <h6 class="product_h6">Your custom contents</h6>
-                        <ul class="product_list">
+                        <p class="product_name_p flow-text">Mikayla</p>
+                        <h6 class="product_h6 flow-text">Your custom contents</h6>
+                        <ul class="product_list flow-text">
                             <li>• Understand Your Stress</li>
                             <li>• Anger Management</li>
                         </ul>
                     </div>
                 </div>
-                <div class="product_flex-right">
-                    <div class="product_text">
-                        <h4 class="product_h4">Our product</h4>
-                        <h2 class="product_h2">You tell us your stress, We make your diary</h2>
-                        <p class="product_p">Everyone experiences it, and in different ways.<br>Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
-                        <button class="product_btn">Find Your Way</button>
-                    </div>
+                <div class="product_grid-right">
+                    <h4 class="product_h4">Our product</h4>
+                    <h2 class="product_h2">You tell us your stress, We make your diary</h2>
+                    <p class="product_p">Everyone experiences it, and in different ways.<br>Let Alivio guide you, in a personalized journal experience, to overcome your stress.</p>
+                    <button class="product_btn">Find Your Way</button>
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
-            <img class="logo" src="img/footer_logo.svg" alt="Alivio">
+            <img class="footer_img" src="img/footer_logo.svg" alt="Alivio">
             <ul>
-                <li><a href="">Why Alivio</a></li>
-                <li><a href="">Solutions</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Pricing</a></li>
+                <li><a href="#alivio">Why Alivio</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#pricing">Pricing</a></li>
             </ul>
         </div>
-    </footer>
+    </footer>  
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
